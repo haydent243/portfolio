@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="retro-header">
+        <div class="container">
+            <h1 class="main-title">Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="retro-title">About Me</h2>
+            <p class="retro-text">Creative professional with a passion for vintage aesthetics and modern functionality. Explore my portfolio below to discover my journey.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section retro-portfolio">
+        <div class="container">
+            <h2 class="retro-title">Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Project description.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Project description.</p>
+                </div>
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="project-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Project Video</h3>
+                    <p>Watch this project in action!</p>
+                </div>
+                <div class="portfolio-item">
+                    <a href="project-document.pdf" download>Download Project Doc</a>
+                    <h3>Project Document</h3>
+                    <p>Download the project details in PDF.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="retro-title">Contact Me</h2>
+            <form id="contact-form" class="retro-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea
