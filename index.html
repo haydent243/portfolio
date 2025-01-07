@@ -93,60 +93,72 @@
             text-align: center;
             padding: 10px;
         }
+
+        .menu {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #24244b;
+            border: 2px solid #ffc857;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu a {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffc857;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-shadow: 0px 0px 8px #ffc857;
+        }
+
+        .bio-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .store-item {
+            background-color: #2a2a5e;
+            color: #ffc857;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Retro Portfolio</h1>
-        <nav>
-            <a href="#intro">Intro</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#store">Parody Store</a>
-        </nav>
     </header>
+
+    <div class="menu">
+        <a href="intro.html">Intro</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="store.html">Store</a>
+    </div>
 
     <main>
         <section id="intro">
             <h2 class="intro">Welcome to My Retro World</h2>
             <p>Step into a time machine and explore creativity with a retro twist!</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm a creative professional with a passion for retro design and nostalgic aesthetics.</p>
-            <p>From pixels to posters, I blend modern innovation with timeless style.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/200" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>A cool retro website design.</p>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/200" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>A pixel art animation.</p>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/200" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>An 8-bit video game concept.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="store">
-            <h2>Parody Store</h2>
-            <p>Welcome to my fake store where everything is "Not For Sale." Enjoy the laughs!</p>
-            <ul>
-                <li>"Invisible Shoes" - $0.00</li>
-                <li>"Time Machine (Out of Order)" - $Infinity</li>
-                <li>"Pixelated Pizza" - Priceless</li>
-            </ul>
+            <button onclick="location.href='projects.html'">Explore My Portfolio</button>
         </section>
     </main>
 
